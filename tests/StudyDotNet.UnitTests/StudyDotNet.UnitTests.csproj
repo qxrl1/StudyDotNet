@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\StudyDotNet.Domain\StudyDotNet.Domain.csproj" />
+    <ProjectReference Include="..\..\src\StudyDotNet.Application\StudyDotNet.Application.csproj" />
   </ItemGroup>
 
 </Project>
