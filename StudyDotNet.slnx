@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/StudyDotNet.Api/StudyDotNet.Api.csproj" />
+    <Project Path="src/StudyDotNet.Application/StudyDotNet.Application.csproj" />
+    <Project Path="src/StudyDotNet.Domain/StudyDotNet.Domain.csproj" />
+    <Project Path="src/StudyDotNet.Infrastructure/StudyDotNet.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/StudyDotNet.IntegrationTests/StudyDotNet.IntegrationTests.csproj" />
+    <Project Path="tests/StudyDotNet.UnitTests/StudyDotNet.UnitTests.csproj" />
+  </Folder>
+</Solution>
