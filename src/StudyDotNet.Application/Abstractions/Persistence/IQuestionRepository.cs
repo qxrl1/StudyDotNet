@@ -7,6 +7,8 @@ namespace StudyDotNet.Application.Abstractions.Persistence;
 
 public interface IQuestionRepository
 {
+    Task AddAsync(Question question, CancellationToken cancellationToken);
+
     Task<Question?> GetPublishedByIdAsync(Guid questionId, CancellationToken cancellationToken);
 
     Task<PagedResult<QuestionSummaryResponse>> GetPublishedPageAsync(

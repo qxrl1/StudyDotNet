@@ -9,6 +9,12 @@ namespace StudyDotNet.Infrastructure.Persistence.Repositories;
 
 internal sealed class QuestionRepository(StudyDotNetDbContext dbContext) : IQuestionRepository
 {
+    public async Task AddAsync(Question question, CancellationToken cancellationToken)
+    {
+        dbContext.Questions.Add(question);
+        await dbContext.SaveChangesAsync(cancellationToken);
+    }
+
     public async Task<Question?> GetPublishedByIdAsync(Guid questionId, CancellationToken cancellationToken)
     {
         return await dbContext.Questions
